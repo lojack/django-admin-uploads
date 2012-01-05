@@ -91,7 +91,7 @@ function buildCode(self, use_html) {
     return code;
 }
 
-$(function(){
+jQuery(function(){
 
     $('#uploads li').click(function(){
         $(this).children('.popup').show();

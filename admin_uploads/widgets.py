@@ -32,7 +32,7 @@ class WYMEditor(forms.Textarea):
         rendered = super(WYMEditor, self).render(name, value, attrs)
         id = "id_" + name
         wymeditor = mark_safe(u"""<script type="text/javascript">
-            $("#%s").wymeditor({
+            jQuery("#%s").wymeditor({
                 updateSelector: ".submit-row input[type=submit]",
                 updateEvent: "click",
                 lang: "%s",
